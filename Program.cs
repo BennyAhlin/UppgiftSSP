@@ -1,14 +1,15 @@
 ﻿
 //Uppgift sten sax påse 2 players.
+using System;
 using System.Net.NetworkInformation;
 using UppgiftSSP;
 
 //För att skapa player objects
 Player firstName = new Player();
 Player secondName = new Player();
-string Option = string.Empty;
-string weapon1 = string.Empty;
-string weapon2 = string.Empty;
+string? Option = string.Empty;
+string? weapon1 = string.Empty;
+string? weapon2 = string.Empty;
 int point1 = 0;
 int point2 = 0;
 string? player1 = string.Empty;
@@ -71,6 +72,7 @@ while (game)
         Console.Clear();
     }
 
+    Console.WriteLine();
     Console.Write("Hello " + firstName.name);
     //Player 2 enter name
     if (Option == "pvp")
@@ -82,6 +84,7 @@ while (game)
     Console.WriteLine("The rules are simple. Do not cheat!");
     Console.WriteLine("And may the best player of 3 rounds wins the game.");
 
+    
     if (Option == "pvp")
     {
         //Randomize who will begin the game.
@@ -95,12 +98,7 @@ while (game)
         player1 = firstName.name;
     }
 
-    //GÖR OM PLAYER 2 till bot.
-    // player2 = "bot";
-
-
     //player 2.
-
     string? player2 = string.Empty;
 
     if (firstName.name == player1 && Option == "pvp")
@@ -127,9 +125,6 @@ while (game)
     while (Option == "pvp")
     {
 
-        //Randomized player får läggas i ny int så att man kan hålla koll på vems tur det är.
-        //Console.WriteLine("The player " + player1 + " was randomized to start the game."); // lägg till random namn här
-
         Console.WriteLine(player1 + " Please chose your weapon from below.");
         Console.WriteLine();
         Console.WriteLine("1. " + Weapons.Rock);
@@ -144,6 +139,7 @@ while (game)
             Console.WriteLine("Sorry you didn't pick a correct weapon, try again!");
             Console.WriteLine();
             Console.WriteLine();
+            continue;
         }
 
         while (weapon1 == "1" || weapon1 == "2" || weapon1 == "3")
@@ -162,6 +158,7 @@ while (game)
                 Console.WriteLine("Sorry you didn't pick a correct weapon, try again!");
                 Console.WriteLine();
                 Console.WriteLine();
+                continue;
             }
             else
             {
@@ -221,11 +218,11 @@ while (game)
 
     }
 
+
+    //PLAY vs a bot.
     while (Option == "pve")
     {
 
-        //Randomized player får läggas i ny int så att man kan hålla koll på vems tur det är.
-        //Console.WriteLine("The player " + player1 + " was randomized to start the game."); // lägg till random namn här
 
         Console.WriteLine(player1 + " Please chose your weapon from below.");
         Console.WriteLine();
@@ -241,29 +238,25 @@ while (game)
             Console.WriteLine("Sorry you didn't pick a correct weapon, try again!");
             Console.WriteLine();
             Console.WriteLine();
+            continue;
+
         }
 
         while (weapon1 == "1" || weapon1 == "2" || weapon1 == "3")
         {
+            //BOT ska random välja vapen
+            Random RND = new Random();
+            int botChoice = RND.Next(1, 4);
+
             Console.WriteLine(player2 + " Please chose your weapon from below.");
             Console.WriteLine();
             Console.WriteLine("1. " + Weapons.Rock);
             Console.WriteLine("2. " + Weapons.Paper);
             Console.WriteLine("3. " + Weapons.Scissors);
-            weapon2 = Console.ReadLine();
+            weapon2 = botChoice.ToString();
             Console.Clear();
 
-            if (weapon2 != "1" && weapon2 != "2" && weapon2 != "3")
-            {
-                Console.Clear();
-                Console.WriteLine("Sorry you didn't pick a correct weapon, try again!");
-                Console.WriteLine();
-                Console.WriteLine();
-            }
-            else
-            {
-                break;
-            }
+            break;
         }
 
         //No points if draw.
