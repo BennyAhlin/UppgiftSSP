@@ -11,6 +11,7 @@ string weapon1 = string.Empty;
 string weapon2 = string.Empty;
 int point1 = 0;
 int point2 = 0;
+string? player1 = string.Empty;
 
 bool game = true;
 while (game)
@@ -63,39 +64,59 @@ while (game)
     firstName.name = Console.ReadLine();
     Console.Clear();
 
+    if (Option == "pvp")
+    {
+        Console.WriteLine("Hello " + firstName.name + ". Now please enter the name of player 2.");
+        secondName.name = Console.ReadLine();
+        Console.Clear();
+    }
+
+    Console.Write("Hello " + firstName.name);
     //Player 2 enter name
-    Console.WriteLine("Hello " + firstName.name + ". Now please enter the name of player 2.");
-    secondName.name = Console.ReadLine();
-    Console.Clear();
-
-    //randomize who starts!
-
-
-    Console.WriteLine("Hello " + firstName.name + " and " + secondName.name + ".");
+    if (Option == "pvp")
+    {
+        Console.WriteLine(" and " + secondName.name + ".");
+    }
     Console.WriteLine();
     Console.WriteLine("I hope you are prepared for a game of rock paper scissors!");
     Console.WriteLine("The rules are simple. Do not cheat!");
     Console.WriteLine("And may the best player of 3 rounds wins the game.");
 
-    //Randomize who will begin the game.
-    string?[] randomPlayer = { firstName.name, secondName.name };
-    Random rnd = new Random();
-    int index = rnd.Next(0, randomPlayer.Length);
-    string? player1 = randomPlayer[index];
-
-
-    //player 2.
-    string? player2 = string.Empty;
-
-    if (firstName.name == player1)
+    if (Option == "pvp")
     {
-        player2 = secondName.name;
+        //Randomize who will begin the game.
+        string?[] randomPlayer = { firstName.name, secondName.name };
+        Random rnd = new Random();
+        int index = rnd.Next(0, randomPlayer.Length);
+        player1 = randomPlayer[index];
     }
     else
     {
-        player2 = firstName.name;
+        player1 = firstName.name;
     }
 
+    //GÖR OM PLAYER 2 till bot.
+    // player2 = "bot";
+
+
+    //player 2.
+
+    string? player2 = string.Empty;
+
+    if (firstName.name == player1 && Option == "pvp")
+    {
+        player2 = secondName.name;
+    }
+    else if (firstName.name != player1 && Option == "pvp")
+    {
+        player2 = firstName.name;
+    }
+    else
+    {
+        player2 = "Bot2000";
+    }
+
+    Console.WriteLine();
     Console.WriteLine("Player 1. " + player1 + " starts the game.");
     Console.WriteLine("Player 2. " + player2 + " you will be up next.");
     Console.WriteLine();
@@ -105,10 +126,6 @@ while (game)
 
     while (Option == "pvp")
     {
-
-
-
-
 
         //Randomized player får läggas i ny int så att man kan hålla koll på vems tur det är.
         //Console.WriteLine("The player " + player1 + " was randomized to start the game."); // lägg till random namn här
@@ -204,6 +221,104 @@ while (game)
 
     }
 
+    while (Option == "pve")
+    {
+
+        //Randomized player får läggas i ny int så att man kan hålla koll på vems tur det är.
+        //Console.WriteLine("The player " + player1 + " was randomized to start the game."); // lägg till random namn här
+
+        Console.WriteLine(player1 + " Please chose your weapon from below.");
+        Console.WriteLine();
+        Console.WriteLine("1. " + Weapons.Rock);
+        Console.WriteLine("2. " + Weapons.Paper);
+        Console.WriteLine("3. " + Weapons.Scissors);
+        weapon1 = Console.ReadLine();
+        Console.Clear();
+
+        if (weapon1 != "1" && weapon1 != "2" && weapon1 != "3")
+        {
+            Console.Clear();
+            Console.WriteLine("Sorry you didn't pick a correct weapon, try again!");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        while (weapon1 == "1" || weapon1 == "2" || weapon1 == "3")
+        {
+            Console.WriteLine(player2 + " Please chose your weapon from below.");
+            Console.WriteLine();
+            Console.WriteLine("1. " + Weapons.Rock);
+            Console.WriteLine("2. " + Weapons.Paper);
+            Console.WriteLine("3. " + Weapons.Scissors);
+            weapon2 = Console.ReadLine();
+            Console.Clear();
+
+            if (weapon2 != "1" && weapon2 != "2" && weapon2 != "3")
+            {
+                Console.Clear();
+                Console.WriteLine("Sorry you didn't pick a correct weapon, try again!");
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        //No points if draw.
+        if (weapon1 == weapon2)
+        {
+            Console.WriteLine("Sorry this was a draw. No one was given any points.");
+            Console.WriteLine("Try again, but this time try to win. ;) ");
+            Console.WriteLine();
+            Console.WriteLine(player1 + " Got " + point1 + " points.");
+            Console.WriteLine(player2 + " Got " + point2 + " points.");
+            Console.WriteLine();
+        }
+
+        //This gives player 1 points.
+        else if (
+            weapon1 == "1" && weapon2 == "3" ||
+            weapon1 == "2" && weapon2 == "1" ||
+            weapon1 == "3" && weapon2 == "2")
+        {
+            point1++;
+            Console.WriteLine("Good work " + player1 + "!");
+            Console.WriteLine();
+            Console.WriteLine(player1 + " Got " + point1 + " points.");
+            Console.WriteLine(player2 + " Got " + point2 + " points.");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+        //This gives player 2 points.
+        else
+        {
+            point2++;
+            Console.WriteLine("Good work " + player2 + "!");
+            Console.WriteLine();
+            Console.WriteLine(player1 + " Got " + point1 + " points.");
+            Console.WriteLine(player2 + " Got " + point2 + " points.");
+            Console.WriteLine();
+            Console.WriteLine();
+        }
+
+        //End game if points reach the goal.
+        if (point1 == 2 || point2 == 2)
+        {
+            Console.Clear();
+            break;
+        }
+
+
+        //Reset weapon slots to be able to play again.
+        weapon1 = string.Empty;
+        weapon2 = string.Empty;
+
+
+    }
+
+
     while (true)
     {
         if (point1 == 2)
@@ -243,5 +358,7 @@ while (game)
         Console.Clear();
     }
 }
+
 Console.WriteLine();
-Console.WriteLine("Thank you for playing this game. Please subscribe or send me cash :)");
+Console.WriteLine("Thank you for playing this game.");
+Console.WriteLine("Please subscribe or send me some cash");
