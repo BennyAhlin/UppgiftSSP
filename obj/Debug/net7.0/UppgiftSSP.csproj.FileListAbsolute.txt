@@ -1,0 +1,14 @@
+C:\Users\Benny\source\repos\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.exe
+C:\Users\Benny\source\repos\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.deps.json
+C:\Users\Benny\source\repos\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.runtimeconfig.json
+C:\Users\Benny\source\repos\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.dll
+C:\Users\Benny\source\repos\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.pdb
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.AssemblyInfoInputs.cache
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.AssemblyInfo.cs
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.csproj.CoreCompileInputs.cache
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.dll
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\refint\UppgiftSSP.dll
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.pdb
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.genruntimeconfig.cache
+C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\ref\UppgiftSSP.dll
