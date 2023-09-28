@@ -2,3 +2,6 @@
 
 # CA1051: Do not declare visible instance fields
 dotnet_diagnostic.CA1051.severity = error
+
+# IDE0059: Unnecessary assignment of a value
+dotnet_diagnostic.IDE0059.severity = none

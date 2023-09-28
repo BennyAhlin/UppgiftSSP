@@ -11,6 +11,7 @@ namespace UppgiftSSP
         Rock,
         Paper,
         Scissors,
+
     }
 
 }
