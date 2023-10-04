@@ -2,9 +2,21 @@
 //Uppgift sten sax påse 2 players.
 using UppgiftSSP;
 
+
+
+
 //För att skapa player objects
 Player firstName = new();
 Player secondName = new();
+
+
+
+
+
+
+
+
+
 
 bool game = true;
 while (game)
