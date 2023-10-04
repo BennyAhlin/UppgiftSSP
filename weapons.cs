@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace UppgiftSSP
 {
-    internal enum Weapons
+    public enum Weapons
     {
         Rock,
         Paper,
         Scissors,
-
     }
 
 }

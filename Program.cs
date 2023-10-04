@@ -5,14 +5,25 @@ using UppgiftSSP;
 //För att skapa player objects
 Player firstName = new();
 Player secondName = new();
+Player option = new();
 
 bool game = true;
+
+for (int i = 1; i <= 10; i++)
+{
+    Console.WriteLine(i);
+
+}
+Console.WriteLine("Counter works. Please press Enter to continue!");
+Console.ReadKey();
+
 while (game)
 {
-        string Option = string.Empty;
+    string Option = string.Empty;
     while (true)
     {
         //Welcome text
+        Console.Clear();
         Console.WriteLine("Welcome to Rock, Paper Scizzors!");
         Console.WriteLine("You will now have to choose from one of these options below.");
         Console.WriteLine("Please select 1 or 2 and then press enter to continue.\n\n");
@@ -48,13 +59,8 @@ while (game)
 
     }
 
-
-    foreach (int i in Enum.GetValues(typeof(Weapons)))
-    {
-
-        Console.WriteLine(i + 1);
-    }
-
+    Menu pvp = Menu.PvP;
+    Menu pve = Menu.Bot;
 
 
     //Player 1 enter name
@@ -62,7 +68,7 @@ while (game)
     firstName.name = Console.ReadLine();
     Console.Clear();
 
-    if (Option == "pvp")
+    if (pvp == 0)
     {
         Console.WriteLine("Hello " + firstName.name + ". Now please enter the name of player 2.");
         secondName.name = Console.ReadLine();
@@ -126,7 +132,7 @@ while (game)
 
         Console.WriteLine(player1 + " Please chose your weapon from below.");
         Console.WriteLine();
-        Console.WriteLine("1. " + Weapons.Rock);
+        Console.WriteLine("1. " + Weapons.Rock); 
         Console.WriteLine("2. " + Weapons.Paper);
         Console.WriteLine("3. " + Weapons.Scissors);
         firstName.weapon = Console.ReadLine();

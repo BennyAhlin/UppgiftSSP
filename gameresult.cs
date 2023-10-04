@@ -2,7 +2,7 @@
 
 namespace UppgiftSSP
 {
-    internal class gameresult
+    internal class Gameresult
     {
 
       
