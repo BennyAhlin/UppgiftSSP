@@ -8,9 +8,9 @@ namespace UppgiftSSP
 {
     internal enum Weapons
     {
-        Rock,
-        Paper,
-        Scissors,
+        Sten,
+        Påse,
+        Sax,
 
     }
 
