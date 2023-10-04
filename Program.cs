@@ -13,7 +13,7 @@ while (game)
     while (true)
     {
         //Welcome text
-        Console.WriteLine("Welcome to Rock, Paper Scizzors!");
+        Console.WriteLine("Welcome to Sten, Sax, Påse!");
         Console.WriteLine("You will now have to choose from one of these options below.");
         Console.WriteLine("Please select 1 or 2 and then press enter to continue.\n\n");
         Console.WriteLine("          1. Player vs Bot.\n");
@@ -126,9 +126,9 @@ while (game)
 
         Console.WriteLine(player1 + " Please chose your weapon from below.");
         Console.WriteLine();
-        Console.WriteLine("1. " + Weapons.Rock);
-        Console.WriteLine("2. " + Weapons.Paper);
-        Console.WriteLine("3. " + Weapons.Scissors);
+        Console.WriteLine("1. " + Weapons.Sten);
+        Console.WriteLine("2. " + Weapons.Påse);
+        Console.WriteLine("3. " + Weapons.Sax);
         firstName.weapon = Console.ReadLine();
         Console.Clear();
 
@@ -145,9 +145,9 @@ while (game)
         {
             Console.WriteLine(player2 + " Please chose your weapon from below.");
             Console.WriteLine();
-            Console.WriteLine("1. " + Weapons.Rock);
-            Console.WriteLine("2. " + Weapons.Paper);
-            Console.WriteLine("3. " + Weapons.Scissors);
+            Console.WriteLine("1. " + Weapons.Sten);
+            Console.WriteLine("2. " + Weapons.Påse);
+            Console.WriteLine("3. " + Weapons.Sax);
             secondName.weapon = Console.ReadLine();
             Console.Clear();
 
@@ -220,9 +220,9 @@ while (game)
 
         Console.WriteLine(player1 + " Please chose your weapon from below.");
         Console.WriteLine();
-        Console.WriteLine("1. " + Weapons.Rock);
-        Console.WriteLine("2. " + Weapons.Paper);
-        Console.WriteLine("3. " + Weapons.Scissors);
+        Console.WriteLine("1. " + Weapons.Sten);
+        Console.WriteLine("2. " + Weapons.Påse);
+        Console.WriteLine("3. " + Weapons.Sax);
         firstName.weapon = Console.ReadLine();
         Console.Clear();
 
@@ -243,9 +243,9 @@ while (game)
 
             Console.WriteLine(player2 + " Please chose your weapon from below.");
             Console.WriteLine();
-            Console.WriteLine("1. " + Weapons.Rock);
-            Console.WriteLine("2. " + Weapons.Paper);
-            Console.WriteLine("3. " + Weapons.Scissors);
+            Console.WriteLine("1. " + Weapons.Sten);
+            Console.WriteLine("2. " + Weapons.Påse);
+            Console.WriteLine("3. " + Weapons.Sax);
             secondName.weapon = botChoice.ToString();
             Console.Clear();
 

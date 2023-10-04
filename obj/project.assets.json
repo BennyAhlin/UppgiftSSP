@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Benny\\.nuget\\packages\\": {}
+    "C:\\Users\\Ellen\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj",
+      "projectUniqueName": "C:\\Users\\Ellen\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj",
       "projectName": "UppgiftSSP",
-      "projectPath": "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj",
-      "packagesPath": "C:\\Users\\Benny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\obj\\",
+      "projectPath": "C:\\Users\\Ellen\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj",
+      "packagesPath": "C:\\Users\\Ellen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Ellen\\source\\repos\\UppgiftSSP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Benny\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Ellen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
