@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eric Browne\\gitProjects\\schoolProjects\\UppgiftSSP\\UppgiftSSP.csproj": {}
+    "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eric Browne\\gitProjects\\schoolProjects\\UppgiftSSP\\UppgiftSSP.csproj": {
+    "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eric Browne\\gitProjects\\schoolProjects\\UppgiftSSP\\UppgiftSSP.csproj",
+        "projectUniqueName": "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj",
         "projectName": "UppgiftSSP",
-        "projectPath": "C:\\Users\\Eric Browne\\gitProjects\\schoolProjects\\UppgiftSSP\\UppgiftSSP.csproj",
-        "packagesPath": "C:\\Users\\Eric Browne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eric Browne\\gitProjects\\schoolProjects\\UppgiftSSP\\obj\\",
+        "projectPath": "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\UppgiftSSP.csproj",
+        "packagesPath": "C:\\Users\\Benny\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Benny\\source\\repos\\UppgiftSSP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Eric Browne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Benny\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
