@@ -12,3 +12,17 @@ C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\refint\UppgiftSSP.dll
 C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.pdb
 C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.genruntimeconfig.cache
 C:\Users\Benny\source\repos\UppgiftSSP\obj\Debug\net7.0\ref\UppgiftSSP.dll
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.exe
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.deps.json
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.runtimeconfig.json
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.dll
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\bin\Debug\net7.0\UppgiftSSP.pdb
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.AssemblyInfoInputs.cache
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.AssemblyInfo.cs
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.csproj.CoreCompileInputs.cache
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.dll
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\refint\UppgiftSSP.dll
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.pdb
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\UppgiftSSP.genruntimeconfig.cache
+C:\Users\Eric Browne\gitProjects\schoolProjects\UppgiftSSP\obj\Debug\net7.0\ref\UppgiftSSP.dll

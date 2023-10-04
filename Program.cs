@@ -2,6 +2,9 @@
 //Uppgift sten sax påse 2 players.
 using UppgiftSSP;
 
+Intro intro = new Intro();
+intro.GameIntro();
+
 //För att skapa player objects
 Player firstName = new();
 Player secondName = new();
